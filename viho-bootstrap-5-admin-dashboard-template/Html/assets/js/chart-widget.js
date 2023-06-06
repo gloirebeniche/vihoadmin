@@ -358,7 +358,429 @@
     var chartlinechart52 = new ApexCharts(document.querySelector("#chart-widget52"), optionslinechart52);
     chartlinechart52.render();
 
+        /*Line chart52*/
+        var optionslinechart53 = {
+            chart: {
+                toolbar: {
+                    show: false
+                },
+                height: 170,
+                type: 'area'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                show: false,
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+                labels: {
+                    show: false,
+                },
+                axisBorder: {
+                    show: false,
+                },
+            },
+            grid: {
+                show: false,
+                padding: {
+                    left: 0,
+                    right: 0,
+                    bottom: -40
+                }
+            },
+            fill: {
+                colors: [vihoAdminConfig.primary],
+                type: 'gradient',
+                gradient: {
+                    shade: 'light',
+                    type: 'vertical',
+                    shadeIntensity: 0.4,
+                    inverseColors: false,
+                    opacityFrom: 0.8,
+                    opacityTo: 0.2,
+                    stops: [0, 100]
+                },
+            },
+            colors: [vihoAdminConfig.primary],
+            series: [{
+                data: [24, 55, 21, 67, 22, 43, 21]
+            }],
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                }
+            }
+        };
+        var chartlinechart53 = new ApexCharts(document.querySelector("#chart-widget53"), optionslinechart53);
+        chartlinechart53.render();
+
+            
+      /*Line chart54*/
+      var optionslinechart54 = {
+        chart: {
+            toolbar: {
+                show: false
+            },
+            height: 170,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        xaxis: {
+            show: false,
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+            labels: {
+                show: false,
+            },
+            axisBorder: {
+                show: false,
+            },
+        },
+        grid: {
+            show: false,
+            padding: {
+                left: 0,
+                right: 0,
+                bottom: -40
+            }
+        },
+        fill: {
+            colors: [vihoAdminConfig.primary],
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                type: 'vertical',
+                shadeIntensity: 0.4,
+                inverseColors: false,
+                opacityFrom: 0.8,
+                opacityTo: 0.2,
+                stops: [0, 100]
+            },
+        },
+        colors: [vihoAdminConfig.primary],
+        series: [{
+            data: [24, 55, 21, 67, 22, 43, 21]
+        }],
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+    var chartlinechart54 = new ApexCharts(document.querySelector("#chart-widget54"), optionslinechart54);
+    chartlinechart54.render();
+
+      /*Line chart55*/
+      var optionslinechart55 = {
+        chart: {
+            toolbar: {
+                show: false
+            },
+            height: 170,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        xaxis: {
+            show: false,
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+            labels: {
+                show: false,
+            },
+            axisBorder: {
+                show: false,
+            },
+        },
+        grid: {
+            show: false,
+            padding: {
+                left: 0,
+                right: 0,
+                bottom: -40
+            }
+        },
+        fill: {
+            colors: [vihoAdminConfig.primary],
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                type: 'vertical',
+                shadeIntensity: 0.4,
+                inverseColors: false,
+                opacityFrom: 0.8,
+                opacityTo: 0.2,
+                stops: [0, 100]
+            },
+        },
+        colors: [vihoAdminConfig.primary],
+        series: [{
+            data: [24, 55, 21, 67, 22, 43, 21]
+        }],
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+    var chartlinechart55 = new ApexCharts(document.querySelector("#chart-widget55"), optionslinechart55);
+    chartlinechart55.render();
+
+       /*Line chart56*/
+       var optionslinechart56 = {
+        chart: {
+            toolbar: {
+                show: false
+            },
+            height: 170,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        xaxis: {
+            show: false,
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+            labels: {
+                show: false,
+            },
+            axisBorder: {
+                show: false,
+            },
+        },
+        grid: {
+            show: false,
+            padding: {
+                left: 0,
+                right: 0,
+                bottom: -40
+            }
+        },
+        fill: {
+            colors: [vihoAdminConfig.secondary],
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                type: 'vertical',
+                shadeIntensity: 0.4,
+                inverseColors: false,
+                opacityFrom: 0.8,
+                opacityTo: 0.2,
+                stops: [0, 100]
+            },
+        },
+        colors: [vihoAdminConfig.primary],
+        series: [{
+            data: [24, 55, 21, 67, 22, 43, 21]
+        }],
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+    var chartlinechart56 = new ApexCharts(document.querySelector("#chart-widget56"), optionslinechart56);
+    chartlinechart56.render();
+
+          /*Line chart57*/
+          var optionslinechart57 = {
+            chart: {
+                toolbar: {
+                    show: false
+                },
+                height: 170,
+                type: 'area'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                show: false,
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+                labels: {
+                    show: false,
+                },
+                axisBorder: {
+                    show: false,
+                },
+            },
+            grid: {
+                show: false,
+                padding: {
+                    left: 0,
+                    right: 0,
+                    bottom: -40
+                }
+            },
+            fill: {
+                colors: [vihoAdminConfig.secondary],
+                type: 'gradient',
+                gradient: {
+                    shade: 'light',
+                    type: 'vertical',
+                    shadeIntensity: 0.4,
+                    inverseColors: false,
+                    opacityFrom: 0.8,
+                    opacityTo: 0.2,
+                    stops: [0, 100]
+                },
+            },
+            colors: [vihoAdminConfig.primary],
+            series: [{
+                data: [24, 55, 21, 67, 22, 43, 21]
+            }],
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                }
+            }
+        };
+        var chartlinechart57 = new ApexCharts(document.querySelector("#chart-widget57"), optionslinechart57);
+        chartlinechart57.render();
+
+              /*Line chart58*/
+       var optionslinechart58 = {
+        chart: {
+            toolbar: {
+                show: false
+            },
+            height: 170,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        xaxis: {
+            show: false,
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+            labels: {
+                show: false,
+            },
+            axisBorder: {
+                show: false,
+            },
+        },
+        grid: {
+            show: false,
+            padding: {
+                left: 0,
+                right: 0,
+                bottom: -40
+            }
+        },
+        fill: {
+            colors: [vihoAdminConfig.secondary],
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                type: 'vertical',
+                shadeIntensity: 0.4,
+                inverseColors: false,
+                opacityFrom: 0.8,
+                opacityTo: 0.2,
+                stops: [0, 100]
+            },
+        },
+        colors: [vihoAdminConfig.primary],
+        series: [{
+            data: [24, 55, 21, 67, 22, 43, 21]
+        }],
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+    var chartlinechart58 = new ApexCharts(document.querySelector("#chart-widget58"), optionslinechart58);
+    chartlinechart58.render();
+
+     
+      /*Line chart52*/
+      var optionslinechart59 = {
+        chart: {
+            toolbar: {
+                show: false
+            },
+            height: 170,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        xaxis: {
+            show: false,
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+            labels: {
+                show: false,
+            },
+            axisBorder: {
+                show: false,
+            },
+        },
+        grid: {
+            show: false,
+            padding: {
+                left: 0,
+                right: 0,
+                bottom: -40
+            }
+        },
+        fill: {
+            colors: [vihoAdminConfig.primary],
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                type: 'vertical',
+                shadeIntensity: 0.4,
+                inverseColors: false,
+                opacityFrom: 0.8,
+                opacityTo: 0.2,
+                stops: [0, 100]
+            },
+        },
+        colors: [vihoAdminConfig.primary],
+        series: [{
+            data: [24, 55, 21, 67, 22, 43, 21]
+        }],
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+    var chartlinechart59 = new ApexCharts(document.querySelector("#chart-widget59"), optionslinechart59);
+    chartlinechart59.render();
     // column chart
+
     
     var options = {
         series: [{
