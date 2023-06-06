@@ -1,3 +1,5 @@
+// tout les graphes de la page d'index des beneficiaire
+    
     /*Line chart*/
     var optionslinechart = {
         chart: {
@@ -357,6 +359,9 @@
     };
     var chartlinechart52 = new ApexCharts(document.querySelector("#chart-widget52"), optionslinechart52);
     chartlinechart52.render();
+
+
+    // tout les graphes de la page d'index des beneficiaire
 
         /*Line chart52*/
         var optionslinechart53 = {
