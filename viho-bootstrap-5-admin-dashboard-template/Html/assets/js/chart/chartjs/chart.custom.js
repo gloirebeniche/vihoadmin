@@ -14,14 +14,14 @@ Chart.defaults.global = {
     scaleIntegersOnly: true,
     scaleBeginAtZero: false,
     scaleFontSize: 12,
-    scaleFontStyle: "normal",
+    scaleFontStyle: "bold",
     scaleFontColor: "#717171",
     responsive: true,
     maintainAspectRatio: true,
     showTooltips: true,
     multiTooltipTemplate: "<%= value %>",
     tooltipFillColor: "#333333",
-    tooltipEvents: ["mousemove", "touchstart", "touchmove"],
+    tooltipEvents: ["mousemove"],
     tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
     tooltipFontSize: 14,
     tooltipFontStyle: "normal",
@@ -38,28 +38,22 @@ Chart.defaults.global = {
     onAnimationProgress: function() {},
     onAnimationComplete: function() {}
 };
+// GRAPHE A BAR
 var barData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["January", "February", "March", "April", "May", "June", "July","august","september","october","november","december"],
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(36, 105, 92, 0.4)",
         strokeColor: vihoAdminConfig.primary,
-        highlightFill: "rgba(36, 105, 92, 0.6)",
-        highlightStroke: vihoAdminConfig.primary,
-        data: [35, 59, 80, 81, 56, 55, 40]
-    }, {
-        label: "My Second dataset",
-        fillColor: "rgba(186, 137, 93, 0.4)",
-        strokeColor: vihoAdminConfig.secondary,
-        highlightFill: "rgba(186, 137, 93, 0.6)",
-        highlightStroke: vihoAdminConfig.secondary,
-        data: [28, 48, 40, 19, 86, 27, 90]
-    }]
+       
+     
+        data: [35, 59, 80, 81, 56, 55, 40,66,23,56,100,259]
+    },]
 };
 var barOptions = {
     scaleBeginAtZero: true,
     scaleShowGridLines: true,
-    scaleGridLineColor: "rgba(0,0,0,0.1)",
+   scaleGridLineColor: "rgba(0,0,0,0.1)",
     scaleGridLineWidth: 1,
     scaleShowHorizontalLines: true,
     scaleShowVerticalLines: true,
@@ -70,125 +64,51 @@ var barOptions = {
 };
 var barCtx = document.getElementById("myBarGraph").getContext("2d");
 var myBarChart = new Chart(barCtx).Bar(barData, barOptions);
-var polarData = [
-    {
-        value: 300,
-        color: vihoAdminConfig.primary,
-        highlight: "rgba(36, 105, 92, 1)",
-        label: "Yellow"
-    }, {
-        value: 50,
-        color: vihoAdminConfig.secondary,
-        highlight: "rgba(186, 137, 93, 1)",
-        label: "Sky"
-    }, {
-        value: 100,
-        color: "#222222",
-        highlight: "rgba(34,34,34,1)",
-        label: "Black"
-    }, {
-        value: 40,
-        color: "#717171",
-        highlight: "rgba(113, 113, 113, 1)",
-        label: "Grey"
-    }, {
-        value: 120,
-        color: "#e2c636",
-        highlight: "#616774",
-        label: "Dark Grey"
-    }
-];
-var polarOptions = {
-    scaleShowLabelBackdrop: true,
-    scaleBackdropColor: "rgba(255,255,255,0.75)",
-    scaleBeginAtZero: true,
-    scaleBackdropPaddingY: 2,
-    scaleBackdropPaddingX: 2,
-    scaleShowLine: true,
-    segmentShowStroke: true,
-    segmentStrokeColor: "#fff",
-    segmentStrokeWidth: 2,
-    animationSteps: 100,
-    animationEasing: "easeOutBounce",
-    animateRotate: true,
-    animateScale: false,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
-};
-var polarCtx = document.getElementById("myPolarGraph").getContext("2d");
-var myPolarChart = new Chart(polarCtx).PolarArea(polarData, polarOptions);
-var lineGraphData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [{
-        label: "My First dataset",
-        fillColor: "rgba(36, 105, 92, 0.5)",
-        strokeColor: vihoAdminConfig.primary,
-        pointColor: vihoAdminConfig.primary,
-        pointStrokeColor: "#fff",
-        pointHighlightFill: "#fff",
-        pointHighlightStroke: "#000",
-        data: [10, 59, 80, 81, 56, 55, 40]
-    }, {
-        label: "My Second dataset",
-        fillColor: "rgba(186, 137, 93, 0.3)",
-        strokeColor: vihoAdminConfig.secondary,
-        pointColor: vihoAdminConfig.secondary,
-        pointStrokeColor: "#fff",
-        pointHighlightFill: "#000",
-        pointHighlightStroke: "rgba(30, 166, 236, 1)",
-        data: [28, 48, 40, 19, 86, 27, 90]
-    }]
-};
-var lineGraphOptions = {
-    scaleShowGridLines: true,
-    scaleGridLineColor: "rgba(0,0,0,.05)",
-    scaleGridLineWidth: 1,
-    scaleShowHorizontalLines: true,
-    scaleShowVerticalLines: true,
-    bezierCurve: true,
-    bezierCurveTension: 0.4,
-    pointDot: true,
-    pointDotRadius: 4,
-    pointDotStrokeWidth: 1,
-    pointHitDetectionRadius: 20,
-    datasetStroke: true,
-    datasetStrokeWidth: 2,
-    datasetFill: true,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-};
-var lineCtx = document.getElementById("myGraph").getContext("2d");
-var myLineCharts = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
-var radarData = {
-    labels: ["Ford", "Chevy", "Toyota", "Honda", "Mazda"],
-    datasets: [{
-        label: "My First dataset",
-        fillColor: "rgba(36, 105, 92, 0.4)",
-        strokeColor: vihoAdminConfig.primary,
-        pointColor: vihoAdminConfig.primary,
-        pointStrokeColor: vihoAdminConfig.primary,
-        pointHighlightFill: vihoAdminConfig.primary,
-        pointHighlightStroke: "rgba(68, 102, 242, 0.4)",
-        data: [12, 3, 5, 18, 7]
-    }]
-};
-var radarOptions = {
-    scaleShowGridLines: true,
-    scaleGridLineColor: "rgba(0,0,0,.2)",
-    scaleGridLineWidth: 1,
-    scaleShowHorizontalLines: true,
-    scaleShowVerticalLines: true,
-    bezierCurve: true,
-    bezierCurveTension: 0.4,
-    pointDot: true,
-    pointDotRadius: 3,
-    pointDotStrokeWidth: 1,
-    pointHitDetectionRadius: 20,
-    datasetStroke: true,
-    datasetStrokeWidth: 2,
-    datasetFill: true,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-};
-var radarCtx = document.getElementById("myRadarGraph").getContext("2d");
-var myRadarChart = new Chart(radarCtx).Radar(radarData, radarOptions);
+
+
+// var lineGraphData = {
+//     labels: ["January", "February", "March", "April", "May", "June", "July"],
+//     datasets: [{
+//         label: "My First dataset",
+//         fillColor: "rgba(36, 105, 92, 0.5)",
+//         strokeColor: vihoAdminConfig.primary,
+//         pointColor: vihoAdminConfig.primary,
+//         pointStrokeColor: "#fff",
+//         pointHighlightFill: "#fff",
+//         pointHighlightStroke: "#000",
+//         data: [10, 59, 80, 81, 56, 55, 40]
+//     }, {
+//         label: "My Second dataset",
+//         fillColor: "rgba(186, 137, 93, 0.3)",
+//         strokeColor: vihoAdminConfig.secondary,
+//         pointColor: vihoAdminConfig.secondary,
+//         pointStrokeColor: "#fff",
+//         pointHighlightFill: "#000",
+//         pointHighlightStroke: "rgba(30, 166, 236, 1)",
+//         data: [28, 48, 40, 19, 86, 27, 90]
+//     }]
+// };
+// var lineGraphOptions = {
+//     scaleShowGridLines: true,
+//     scaleGridLineColor: "rgba(0,0,0,.05)",
+//     scaleGridLineWidth: 1,
+//     scaleShowHorizontalLines: true,
+//     scaleShowVerticalLines: true,
+//     bezierCurve: true,
+//     bezierCurveTension: 0.4,
+//     pointDot: true,
+//     pointDotRadius: 4,
+//     pointDotStrokeWidth: 1,
+//     pointHitDetectionRadius: 20,
+//     datasetStroke: true,
+//     datasetStrokeWidth: 2,
+//     datasetFill: true,
+//     legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+// };
+// var lineCtx = document.getElementById("myGraph").getContext("2d");
+// var myLineCharts = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
+
+
 var pieData = [
     {
         value: 300,
@@ -262,17 +182,7 @@ var myLineChart = {
         strokeColor: "#717171",
         pointColor: "#717171",
         data: [10, 20, 40, 30, 0, 20, 10, 30, 10]
-    },{
-        fillColor: "rgba(186, 137, 93, 0.2)",
-        strokeColor: vihoAdminConfig.secondary,
-        pointColor: vihoAdminConfig.secondary,
-        data: [20, 40, 10, 20, 40, 30, 40, 10, 20]
-    }, {
-        fillColor: "rgb(36, 105, 92, 0.2)",
-        strokeColor: vihoAdminConfig.primary,
-        pointColor: vihoAdminConfig.primary,
-        data: [60, 10, 40, 30, 80, 30, 20, 90, 0]
-    }]
+    },]
 }
 var ctx = document.getElementById("myLineCharts").getContext("2d");
 var LineChartDemo = new Chart(ctx).Line(myLineChart, {
@@ -283,3 +193,95 @@ var LineChartDemo = new Chart(ctx).Line(myLineChart, {
     scaleShowVerticalLines: false,
     scaleGridLineColor: "#eeeeee"
 });
+
+
+
+
+// ======================================= //
+
+  // cette fonction permet de charger les data depuis un fichier JSON
+     
+  function updateDataChart(value){
+    async function fetchData(){
+      const urlDataJson = 'data.json';
+      const response = await fetch(urlDataJson);
+      const  datapoints = await response.json();
+      //console.log(datapoints)
+      return datapoints;
+    };
+
+    // récupperation des données par paramettre d"entree
+fetchData().then(datapoints=>{
+    const month = datapoints.financiairerepport[value].financiair.map(
+      function(index){
+        return  index.date;
+      })
+      const revenue = datapoints.financiairerepport[value].financiair.map(
+      function(index){
+        return  index.revenue;
+      })
+      const compagnyname = datapoints.financiairerepport[value].companyname;
+            // chargement des elements dans le graphe
+    barChart.config.data.datasets[0].label = compagnyname;
+    barChart.config.data.labels = month;
+    barChart.config.data.datasets[0].data = revenue;
+    barChart.update();
+  });
+};
+
+
+
+
+// setup 
+const data = {
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  datasets: [{
+    label: 'Weekly Sales',
+    data: [18, 12, 6, 9, 12, 3,9,2,10,15],
+    backgroundColor: [
+      'rgba(255, 26, 104, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(0, 0, 0, 0.2)'
+    ],
+    borderColor: [
+      'rgba(255, 26, 104, 1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(0, 0, 0, 1)'
+    ],
+    borderWidth: 1
+  }]
+};
+
+// config 
+const configbar = {
+  type: 'bar',
+  data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+};
+
+
+
+
+
+// render init block
+const barChart = new Chart(
+  document.getElementById('barChart'),
+  configbar
+);
+
+
+//========================================//
